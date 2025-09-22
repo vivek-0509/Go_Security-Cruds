@@ -1,1 +1,2 @@
 *.envcmd/app/.env
+cmd/app/.env
