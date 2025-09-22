@@ -2,9 +2,15 @@ module awesomeProject
 
 go 1.25
 
-require go.mongodb.org/mongo-driver v1.17.4
+require (
+	github.com/golang-jwt/jwt/v5 v5.3.0
+	github.com/joho/godotenv v1.5.1
+	go.mongodb.org/mongo-driver v1.17.4
+	golang.org/x/oauth2 v0.31.0
+)
 
 require (
+	cloud.google.com/go/compute/metadata v0.3.0 // indirect
 	github.com/golang/snappy v0.0.4 // indirect
 	github.com/klauspost/compress v1.16.7 // indirect
 	github.com/montanaflynn/stats v0.7.1 // indirect

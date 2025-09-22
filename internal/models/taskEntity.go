@@ -1,17 +1,10 @@
-package main
+package models
 
 import (
-	"errors"
 	"time"
 
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
-
-var (
-	ErrMissingMongoURI = errors.New("missing mongo URI")
-)
-
-//task represents a to-do stored in mongoDb
 
 type Task struct {
 	ID          primitive.ObjectID `bson:"_id,omitempty" json:"id"`
